@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap');
+
+/* Body Styles */
+body {
+    background-color: #272D2D;
+    font-family: "Google Sans Code", monospace;
+    color: white;
+}
+
+/* Nav Structure and Style */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #606E6E;
+}
+
+/* Nav Link Padding */
+nav a {
+    padding: 15px;
+}
+
+/* Nav Logo Structure */
+nav img {
+    display: flex;
+    justify-content: end;
+    margin-right: auto;
+    padding: 10px;
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Link Style */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Link Hover Styles */
+a:hover {
+    transform: scale(1.15);
+    transition: .3s ease;
+}
+
+/* Link Visited Color */
+a:visited {
+    color: #51ff00;
+}
+
+/* Home Page Content Structure */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/* Profile Class Text Styles */
+.profile-text {
+    margin-top: 55px;
+    text-align: center;
+}
+
+/* Home Page Main Image Structure and Style */
+main img {
+    width: 400px;
+    height: auto;
+    border: solid;
+    border-radius: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-color: green;
+    box-shadow: 5px 5px 10px rgba(96, 110, 110, 0.5);
+    background-color: #606E6E;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 10%;
+    height: auto;
+}
+
+.about-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 10%;
+    height: auto;
+}
+
+/* Footer Structure and Position */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+    background-color: #606E6E;
+    padding: 35px;
+}
+
+/* About Section Structure and Styles */
+.about-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: solid;
+    border-color: #51ff00;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 50%;
+    font-size: 18pt;
+}
+
+/* Class About Cards Position */
+.about-cards {
+    margin: auto;
+    padding: 10px;
+}
+
+/* Class About Cards Structure and Position */
+.about-cards1,
+.about-cards2,
+.about-cards3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #606E6E;
+}
+
+/* Class About Card Image Structure and Position */
+.about-cards img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Works Section Header Style and Position */
+.works-header {
+    text-align: center;
+    font-size: 18pt;
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 25px;
+    border: solid;
+    border-color: #51ff00;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 50%;
+}
+
+/* Class Work Card Structure */
+.works-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+/* Class Card Main Structure and Style */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid;
+    border-color:#51ff00;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #606E6E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Class Card Hover Style */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #e0e0e0;
+}
+
+/* Class Card and Container Position */
+.card .container {
+    text-align: center;
+    padding: 15px;
+    background-color: #606E6E;
+}
+
+/* Class Card Image Position */
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contact Header Section Structure and Design */
+.contact-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 15px;
+    font-size: 18pt;
+    border: solid;
+    border-color: #51ff00;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 50%;
+}
+
+/* Contact Section Form Structure */
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+    margin-bottom: 120px;
+    padding: 25px;
+    background-color: #606E6E;
+    border-radius: 10px;
+}
+
+/* Form Text Design */
+input[type=text] {
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #272D2D;
+}
+
+/* Form Submit Design */
+input[type=submit] {
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+}
+
+/* 576px Breakpoint Style */
+@media (min-width: 576px) {
+    .profile-card {
+        padding: 35px;
+    }
+}
+
+/* 768px Breakpoint Style and Position */
+@media (min-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        padding: 46px;
+    }
+
+    main img {
+        margin-top: 10px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .about-cards {
+        width: 80%;
+    }
+
+    .about-cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-scroll {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    .works-header {
+        margin-top: 35px;
+    }
+
+    form {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+/* 960px Breakpoint Style and Position */
+@media (min-width: 960px) {
+    .profile-text {
+        text-align: left;
+    }
+
+    .profile-card {
+        flex-direction: row;
+        padding: 125px;
+    }
+
+    main img {
+        margin-top: 80px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .about-cards {
+        width: 100%;
+    }
+
+    .about-cards img {
+        width: 100%;
+        height: auto;
+    }
+
+    #About {
+        margin: auto;
+        width: 65%;
+    }
+
+    .card {
+        width: 25%;
+    }
+
+    .works-header {
+        margin-top: 50px;
+    }
+
+    .works-cards {
+        flex-direction: row;
+        gap: 50px;
+        margin-bottom: 25px;
+    }
+
+    form {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
